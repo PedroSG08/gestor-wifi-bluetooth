@@ -158,32 +158,6 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(conexion))
 
 Tras editarlo: `hyprctl reload`.
 
-## Arranque al estilo ly-greeter (opcional)
-
-Para que el programa aparezca en una consola (`tty2`) al arrancar el equipo,
-crea `/etc/systemd/system/gestor-conexiones.service`:
-
-```ini
-[Unit]
-Description=Gestor de conexiones (TUI)
-After=NetworkManager.service bluetooth.service
-
-[Service]
-TTYPath=/dev/tty2
-StandardInput=tty
-StandardOutput=tty
-StandardError=journal
-ExecStart=/usr/local/bin/gestor-conexiones
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
-```
-
-```bash
-sudo systemctl daemon-reload && sudo systemctl enable --now gestor-conexiones
-```
-
 ## Desinstalación
 
 Según la vía de instalación usada:
