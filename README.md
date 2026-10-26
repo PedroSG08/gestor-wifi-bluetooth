@@ -1,9 +1,6 @@
 # gestor-conexiones
 
-Gestor de **Wi-Fi** y **Bluetooth** para Linux que funciona completamente con el
-teclado, con una interfaz de terminal a pantalla completa inspirada en
-[ly](https://github.com/fairyglade/ly) (el greeter): caja centrada sobre fondo
-oscuro, selección resaltada y mensajes de estado en verde/rojo.
+Gestor de **Wi-Fi** y **Bluetooth** para Linux.
 
 Todo el programa es **un único fichero en Python** sin dependencias externas
 (más allá de las ya típicas de un escritorio Linux: NetworkManager y BlueZ).
@@ -67,7 +64,7 @@ en algún punto del `PATH`.
 **Opción A — para todos los usuarios (recomendada, con sudo):**
 
 ```bash
-git clone https://github.com/TU-USUARIO/gestor-conexiones.git
+git clone https://github.com/PedroSG08/gestor-conexiones.git
 cd gestor-conexiones
 sudo install -Dm 755 gestor-conexiones.py /usr/local/bin/gestor-conexiones
 ```
@@ -75,7 +72,7 @@ sudo install -Dm 755 gestor-conexiones.py /usr/local/bin/gestor-conexiones
 **Opción B — solo tu usuario (`~/.local/bin`):**
 
 ```bash
-git clone https://github.com/TU-USUARIO/gestor-conexiones.git
+git clone https://github.com/PedroSG08/gestor-conexiones.git
 cd gestor-conexiones
 mkdir -p ~/.local/bin
 install -m 755 gestor-conexiones.py ~/.local/bin/gestor-conexiones
