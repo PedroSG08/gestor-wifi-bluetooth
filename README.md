@@ -223,7 +223,4 @@ apartado anterior en `~/.config/hypr/hyprland.lua` y recargando con
   también el perfil de NetworkManager
   (`802-11-wireless-security.psk-flags`: `0` guardada / `2` pedir cada vez).
 
-## Licencia
 
-Distribuido bajo licencia **MIT** (añade un fichero `LICENSE` con el texto
-correspondiente antes de publicar).
